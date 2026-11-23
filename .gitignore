@@ -1,0 +1,7 @@
+*.pdf
+*.pcap
+*.pcapng
+*.har
+.env
+*.log
+evidence/raw/
