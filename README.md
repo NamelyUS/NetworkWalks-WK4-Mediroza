@@ -1,10 +1,10 @@
 # NetworkWalks — Week 4
 ## Mediroza General Hospital Penetration Test
 
-**Author:** Umer Shahid  
-**Batch:** B083  
-**Assessment:** Black-box web application penetration test  
-**Target:** https://medirozahospital.com  
+**Author:** Umer Shahid
+**Batch:** B083
+**Assessment:** Black-box web application penetration test
+**Target:** https://medirozahospital.com
 **Duration:** 5 days
 
 ## Project Overview
