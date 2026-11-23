@@ -1,0 +1,41 @@
+# Nmap 7.991 scan initiated Mon Nov 23 22:14:50 2026 as: /usr/lib/nmap/nmap --privileged -Pn -p 80,443 --script http-title,http-headers,http-methods -oN recon/nmap-http.txt 199.188.201.16
+Nmap scan report for server274-1.web-hosting.com (199.188.201.16)
+Host is up (0.33s latency).
+
+PORT    STATE SERVICE
+80/tcp  open  http
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: One moment, please...
+| http-headers: 
+|   Server: openresty/1.31.1.1
+|   Date: Mon, 23 Nov 2026 17:14:54 GMT
+|   Connection: close
+|   Content-Type: text/html
+|   X-Content-Type-Options: nosniff
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   X-Frame-Options: SAMEORIGIN
+|   Content-Security-Policy: script-src 'nonce-CSfczBCRV/8QYDWyhawHUg=='; style-src 'nonce-CSfczBCRV/8QYDWyhawHUg=='; frame-ancestors 'self'
+|   Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+|   cf-edge-cache: no-cache
+|   
+|_  (Request type: HEAD)
+443/tcp open  https
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: One moment, please...
+| http-headers: 
+|   Server: openresty/1.31.1.1
+|   Date: Mon, 23 Nov 2026 17:14:53 GMT
+|   Connection: close
+|   Content-Type: text/html
+|   X-Content-Type-Options: nosniff
+|   Referrer-Policy: strict-origin-when-cross-origin
+|   X-Frame-Options: SAMEORIGIN
+|   Content-Security-Policy: script-src 'nonce-YvFXJQjUxTkU1ci/l9j9Uw=='; style-src 'nonce-YvFXJQjUxTkU1ci/l9j9Uw=='; frame-ancestors 'self'
+|   Cache-Control: private, no-cache, no-store, must-revalidate, max-age=0
+|   cf-edge-cache: no-cache
+|   
+|_  (Request type: HEAD)
+
+# Nmap done at Mon Nov 23 22:14:59 2026 -- 1 IP address (1 host up) scanned in 8.35 seconds

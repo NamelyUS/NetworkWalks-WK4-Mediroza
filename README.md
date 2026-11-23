@@ -1,27 +1,61 @@
 # NetworkWalks — Week 4
-## Mediroza General Hospital | Black-Box Penetration Test
+## Mediroza General Hospital Penetration Test
 
+**Author:** Umer Shahid  
 **Batch:** B083  
-**Engagement:** 5 days  
-**Target:** https://medirozahospital.com
+**Assessment:** Black-box web application penetration test  
+**Target:** https://medirozahospital.com  
+**Duration:** 5 days
 
-## Objectives
-- M1: Initial access and identification of exposed reports.
-- M2: Analyse file encryption and document findings.
-- M3: Investigate further data exposure.
-- M4: Prepare the penetration testing report.
+## Project Overview
+An authorised penetration-testing assessment covering initial access, PDF encryption recovery, sensitive data exposure and professional reporting.
 
-## Scope Restrictions
-- Target domain only.
-- No social engineering.
-- No denial-of-service testing.
-- No testing outside the authorised scope.
+## Completed Milestones
+
+### M1 — Initial Access
+- Reconnaissance and service identification.
+- SQL injection authentication bypass.
+- Successful access to the patient portal.
+- Retrieval of three laboratory PDF reports.
+
+### M2 — Data Extraction
+- PDF encryption analysis.
+- Password hash extraction using pdf2john.
+- Password recovery using John the Ripper.
+- Successful decryption using qpdf.
+
+### M3 — Critical Data Exposure
+- Public database backup discovery.
+- Exposure of staff and shareholder database tables.
+- PDF metadata analysis.
+- Identification of the database backup location through embedded metadata.
+
+### M4 — Reporting
+- Executive summary.
+- Scope and methodology.
+- Vulnerability findings and proof.
+- Risk ratings.
+- Remediation recommendations.
+
+## Findings
+
+| Finding | Severity |
+|---|---|
+| SQL injection authentication bypass | Critical |
+| Public database backup exposure | Critical |
+| Directory listing | High |
+| Weak PDF encryption | High |
+| Sensitive PDF metadata | Medium |
 
 ## Repository Structure
-- recon/ — Reconnaissance results
-- evidence/ — Sanitised screenshots and evidence
-- findings/ — Vulnerability documentation
-- tools/ — Supporting scripts
-- report/ — Final penetration testing report
+- `recon/` — Reconnaissance and scan results
+- `findings/` — Individual vulnerability findings
+- `evidence/` — Evidence storage
+- `report/` — Final penetration-testing report
+- `tools/` — Supporting scripts
 
-**Important:** No real patient records, credentials, or unredacted personal information will be committed.
+## Evidence Handling
+Raw patient reports, decrypted documents, database backups, passwords and personal information are excluded from the public repository.
+
+## Disclaimer
+This project was conducted under the written educational authorisation supplied by NetworkWalks. Testing was restricted to the agreed target and scope.
