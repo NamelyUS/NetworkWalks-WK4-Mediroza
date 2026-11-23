@@ -26,3 +26,18 @@ An unauthenticated visitor can access a database backup containing sensitive emp
 Remove database backups from public web directories, restrict access, rotate exposed credentials where applicable, and review backup storage permissions.
 
 Individual records are intentionally excluded from this repository.
+
+## PDF Metadata Correlation
+
+Inspection of Report 3's PDF Info dictionary revealed:
+
+- Author identifier: j.malik
+- Creator: Mediroza CMS 1.4.2
+- Producer: Mediroza Lab Reporting Module
+- Embedded comment: Database backup moved to /old before site migration; do not delete.
+
+The author identifier corresponds to an IT Systems Administrator account in the exposed staff database.
+
+This metadata provides a direct investigative link to the publicly accessible database backup under /old/.
+
+Evidence: evidence/raw/report3-metadata.txt
