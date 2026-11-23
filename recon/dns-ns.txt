@@ -1,0 +1,2 @@
+medirozahospital.com.	1800000	IN	NS	dns1.namecheaphosting.com.
+medirozahospital.com.	1800000	IN	NS	dns2.namecheaphosting.com.
